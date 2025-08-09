@@ -1,0 +1,144 @@
+  .about-section.vertical-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    background-color: var(--section-bg);
+    color: var(--text-color);  
+  }
+
+.large-image-container {
+  position: relative;
+  width: 90vw;        /* 90% of viewport width */
+  max-width: 1600px;  /* max width limit */
+  margin: 0 auto;
+}
+  .large-image-container {
+    position: relative;
+    width: 100%;        /* keep your original width */
+    max-width: 2000px;  /* max width limit */
+    margin: 0 auto;
+  }
+
+  .large-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 50px;
+  }
+
+  .caption-box {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* black with some transparency */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    height: 60px;
+    border-radius: 0 0 50px 50px;
+  }
+
+  .image-caption {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Prev/Next buttons inside caption box */
+  .caption-box button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    user-select: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .caption-box button:focus {
+    outline: none;
+  }
+
+  .prev-btn,
+  .next-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0 10px;
+    user-select: none;
+    transition: color 0.3s ease;
+  }
+
+  .prev-btn:hover,
+  .next-btn:hover {
+    color: #ddd;
+  }
+
+
+
+  .carousel-controls {
+    margin-top: 10px;
+  }
+
+  .carousel-controls button {
+    background-color: black;
+    color: white;
+    border: none;
+    margin: 0 10px;
+    padding: 8px 14px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .carousel-controls button:hover {
+    background-color: #444;
+  }
+
+  .typed-text-container {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .typed-text-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .typed-text-container p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: #333;
+  }
+
+  .about-footer {
+    width: 100%;
+    background-color: white;
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    margin-top: 3rem;
+  }
+
+  .footer-caption {
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+  }

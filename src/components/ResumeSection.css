@@ -1,0 +1,51 @@
+.resume-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: var(--section-bg);
+color: var(--text-color);;
+}
+
+.resume-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.resume-description {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.pdf-frame {
+  max-width: 900px;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.resume-download-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background: var(--btn-bg);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.resume-download-btn:hover {
+  background: var(--btn-bg-hover);
+}
+
+/* Light & Dark Mode Variables */
+:root {
+  --btn-bg: #007bff;
+  --btn-bg-hover: #0056b3;
+  --frame-border: #ddd;
+}
+
+[data-theme="dark"] {
+  --btn-bg: #0d6efd;
+  --btn-bg-hover: #0a58ca;
+  --frame-border: #444;
+}

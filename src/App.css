@@ -1,0 +1,39 @@
+:root {
+  --bg-color: white;
+  --text-color: #000000;
+  --accent-color: #0077ff;
+  --section-bg: white;
+}
+
+[data-theme='dark'] {
+  --bg-color: black;
+  --text-color: white;
+  --accent-color: #00d9ff;
+  --section-bg: black;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  scroll-behavior: smooth;
+}
+
+.app {
+  overflow-x: hidden;
+}
+
+button {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.8;
+}

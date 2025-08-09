@@ -1,0 +1,93 @@
+.hero-right h1 {
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  margin-bottom: 15px;
+  white-space: nowrap; /* keeps typing effect in one line */
+  overflow: hidden; /* hides text until "typed" */
+  display: inline-block; /* prevents full-width stretching */
+}
+
+@media (max-width: 768px) {
+  .hero-right h1 {
+    font-size: 1.6rem;
+    white-space: normal; /* allow wrapping on small screens */
+    display: block; /* prevent overflow issues */
+  }
+}
+.hero-section {
+  background: url('../../public/bg.jpg') no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  color: white;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1100px;
+  width: 100%;
+  flex-wrap: wrap; /* allows stacking */
+}
+
+.hero-left {
+  flex: 1 1 300px; /* flexible, min size */
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.hero-right {
+  flex: 1 1 300px; /* flexible, min size */
+  text-align: center; /* center text on small screens */
+}
+
+.hero-right h1 {
+  font-size: clamp(1.8rem, 5vw, 2.5rem); /* scales with screen */
+  margin-bottom: 15px;
+}
+
+.hero-right p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  line-height: 1.6;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 200px;
+    height: 200px;
+  }
+}
+.download-cv-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #1e90ff; /* a nice blue */
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.download-cv-button:hover {
+  background-color: #0c6cd4;
+}
