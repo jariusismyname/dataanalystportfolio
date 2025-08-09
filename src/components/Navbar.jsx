@@ -15,10 +15,10 @@ function Navbar() {
       
       <nav className={`navbar-links ${isOpen ? 'open' : ''}`}>
         <a href="#home">Home</a>
-        <a href="#about">Projects</a>
+        <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a href="#graphs">KnowMeMore</a>
-        <a href="#resume">WorkExperiences</a>        
+        <a href="#achievements">Achievements</a>
+        <a href="#experiences">WorkExperiences</a>        
         <a href="#contact">ContactMe</a>
         <button onClick={toggleTheme} className="dark-toggle">🌓</button>
       </nav>

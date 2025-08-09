@@ -5,7 +5,7 @@ import FadeSection from "./FadeSection";
 
 const Resume = () => {
   return (
-    <section id="resume" className="resume-section">
+    <section id="experiences" className="resume-section">
       <FadeSection>
       <h2 className="resume-title">
        <TypeAnimation
@@ -22,15 +22,32 @@ const Resume = () => {
 <p className="resume-description">
   <TypeAnimation
     sequence={[
-      "Passionate junior data analyst skilled in SQL and Python, eager to support data cleansing and transformation projects.", 3000,
-      "Experienced in analyzing data trends, generating actionable insights, and building clear reports to aid decision-making.", 3000,
-      "Committed to continuous learning and collaboration to deliver impactful business insights.", 3000,
-      "Ready to contribute to dynamic teams and fast-paced environments, bringing attention to detail and problem-solving skills.", 3000,
-    ]}
-    speed={90}
+  "Driven junior data analyst with hands-on experience gained in 2024, proficient in SQL and Python, passionate about transforming raw data into actionable business insights.",
+  6000,  // pause after typing
+  "",    // triggers deletion
+  100,   // short pause before typing next
+
+  "Skilled in identifying trends, generating clear and impactful reports, and supporting data-driven decision-making to help teams succeed.",
+  6000,
+  "",
+  100,
+
+  "Committed to rapid learning and collaboration, with a strong focus on delivering quality results and continuous improvement.",
+  6000,
+  "",
+  100,
+
+  "Eager to contribute attention to detail, problem-solving abilities, and a proactive mindset to dynamic and fast-paced work environments.",
+  6000,
+  "",
+  100,
+]}
+
+    speed={50}  // Adjust typing speed as desired
     repeat={Infinity}
   />
 </p>
+
 
 
       <div className="pdf-frame">

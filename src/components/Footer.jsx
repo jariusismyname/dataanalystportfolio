@@ -1,18 +1,19 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import './Footer.css';
  
 function Footer() {
-  const [email, setEmail] = useState('');
-  const [subscribed, setSubscribed] = useState(false);
+  // const [email, setEmail] = useState('');
+  // // const [subscribed, setSubscribed] = useState(false);
+  // const [ setSubscribed] = useState(false);
 
-  const handleSubscribe = (e) => {
-    e.preventDefault();
-    if (email.trim()) {
-      // In real app, you'd call API to subscribe
-      setSubscribed(true);
-      setEmail('');
-    }
-  };
+  // const handleSubscribe = (e) => {
+  //   e.preventDefault();
+  //   if (email.trim()) {
+  //     // In real app, you'd call API to subscribe
+  //     setSubscribed(true);
+  //     setEmail('');
+  //   }
+  // };
 
   return (
     <footer className="footer">
@@ -27,16 +28,17 @@ function Footer() {
         <div className="footer-column links">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="#about">About</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#graphs">KnowMeMore</a></li>
-            <li><a href="#resume">WorkExperiences</a></li>
+            <li><a href="#ahievements">Achievements</a></li>
+            <li><a href="#experience">WorkExperiences</a></li>
             <li><a href="#contact">ContactMe</a></li>
                 </ul>
         </div>
 
         <div className="footer-column social">
-          <h3>Follow Me</h3>
+          <h3>Let’s Connect</h3>
           <div className="social-icons">
             <a href="https://github.com/jariusismyname" target="_blank" rel="noreferrer" aria-label="GitHub">
               <svg viewBox="0 0 24 24" fill="currentColor" className="icon">
@@ -48,32 +50,24 @@ function Footer() {
                 <path d="M4.98 3.5C3.33 3.5 2 4.83 2 6.48c0 1.65 1.33 2.98 2.98 2.98 1.65 0 2.98-1.33 2.98-2.98 0-1.65-1.33-2.98-2.98-2.98zM2.5 21.5h5v-11h-5v11zm7-11h4.75v1.54h.06c.66-1.26 2.3-2.6 4.74-2.6 5.07 0 6 3.34 6 7.67v8.39h-5v-7.44c0-1.78-.03-4.07-2.48-4.07-2.48 0-2.86 1.94-2.86 3.94v7.57h-5v-11z" />
               </svg>
             </a>
-            <a href="mailto:jmjmjmj160@gmail.com" aria-label="Email">
-              <svg viewBox="0 0 24 24" fill="currentColor" className="icon">
-                <path d="M12 13.5L2 6v12h20V6l-10 7.5zM12 12l10-7H2l10 7z" />
-              </svg>
-            </a>
+           
+          <a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=jmjmjmj160@gmail.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Email via Gmail"
+>
+  <svg viewBox="0 0 24 24" fill="currentColor" className="icon" role="img" aria-hidden="true" focusable="false">
+    <path d="M12 13.5L2 6v12h20V6l-10 7.5zM12 12l10-7H2l10 7z" />
+  </svg>
+</a>
+ <a href="sms:+639765974874" aria-label="Send SMS to 09765974874">
+    💬   
+  </a>
           </div>
         </div>
 
-        <div className="footer-column newsletter">
-          <h3>Subscribe to Newsletter</h3>
-          {!subscribed ? (
-            <form onSubmit={handleSubscribe}>
-              <input
-                type="email"
-                placeholder="Your email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                aria-label="Email address"
-              />
-              <button type="submit">Subscribe</button>
-            </form>
-          ) : (
-            <p>Thank you for subscribing!</p>
-          )}
-        </div>
+         
       </div>
 
       <div className="footer-bottom">

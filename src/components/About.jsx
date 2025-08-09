@@ -49,7 +49,7 @@ useEffect(() => {
     typedTitleInstance.current = new Typed(typedTitleRef.current, {
       strings: [
         "Projects",
-        "My Work",
+        "My Works",
         "What I’ve Built",
         "Data Solutions in Action"
       ],
@@ -68,15 +68,15 @@ useEffect(() => {
   if (typedDescRef.current) {
     typedDescInstance.current = new Typed(typedDescRef.current, {
       strings: [
-        "📊 Sales Performance Dashboard – Designed an interactive Power BI dashboard analyzing regional sales trends, reducing reporting time by 35%.",
-        "🔍 Top Customer Insights – Developed SQL queries and visualizations to identify high-value clients, enabling targeted marketing strategies that boosted revenue.",
-        "⏳ Expiry Monitoring Report – Built an automated system to track and alert for product expirations, cutting waste by 25% and improving inventory turnover.",
-        "📈 Customer Churn Analysis – Created Python-based retention tracking models, improving churn prediction accuracy by 18%.",
-        "🚖 Ride-Hailing Data Insights – Processed large trip datasets to optimize pricing models and identify demand hotspots for operational efficiency.",
-        "🗺 Geospatial Delivery Optimization – Built a route-mapping visualization tool that reduced delivery delays by 20%.",
-        "📉 Market Trend Analysis – Automated data collection pipelines, delivering weekly BI reports to executives for data-driven decision-making.",
+        "Sales Performance Dashboard – Designed an interactive Power BI dashboard analyzing regional sales trends, reducing reporting time by 35%.",
+        "Top Customer Insights – Developed SQL queries and visualizations to identify high-value clients, enabling targeted marketing strategies that boosted revenue.",
+        "Expiry Monitoring Report – Built an automated system to track and alert for product expirations, cutting waste by 25% and improving inventory turnover.",
+        "Customer Churn Analysis – Created Python-based retention tracking models, improving churn prediction accuracy by 18%.",
+        "Ride-Hailing Data Insights – Processed large trip datasets to optimize pricing models and identify demand hotspots for operational efficiency.",
+        "Geospatial Delivery Optimization – Built a route-mapping visualization tool that reduced delivery delays by 20%.",
+        "Market Trend Analysis – Automated data collection pipelines, delivering weekly BI reports to executives for data-driven decision-making.",
       ],
-      typeSpeed: 10,
+      typeSpeed: 60 ,
       backSpeed: 20,
       loop: true,
       showCursor: true,
@@ -111,7 +111,7 @@ useEffect(() => {
 
   return (
     <section
-      id="about"
+      id="projects"
       ref={ref}
       className={`about-section vertical-layout ${inView ? "fade-in" : ""}`}
     >

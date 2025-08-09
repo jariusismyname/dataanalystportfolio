@@ -5,7 +5,8 @@ import FadeSection from "./FadeSection";
 function ContactSection() {
   return (
     <section id="contact" className="contact-section">
-      <FadeSection><h2>Let’s Connect</h2>
+    <FadeSection><h2>Get in touch! Let's discuss how I can leverage my data skills to contribute to your team.</h2>
+
       <div className="contact-container">
         <div className="contact-left">
           <p>You can reach me anytime via this form.</p>

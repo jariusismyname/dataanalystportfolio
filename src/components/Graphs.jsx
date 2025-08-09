@@ -64,7 +64,7 @@ function Graphs() {
   };
 
   return (
-    <section id="graphs" className="graphs-section">
+    <section id="achievements" className="graphs-section">
       <FadeSection>
         <h2>Demonstrating My Data Analysis Capabilities</h2>
         <div className="graphs-container">

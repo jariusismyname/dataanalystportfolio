@@ -17,7 +17,7 @@
   .large-image-container {
     position: relative;
     width: 100%;        /* keep your original width */
-    max-width: 2000px;  /* max width limit */
+    max-width: 3000;  /* max width limit */
     margin: 0 auto;
   }
 
