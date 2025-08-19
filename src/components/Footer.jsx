@@ -20,9 +20,8 @@ function Footer() {
       <div className="footer-top">
         <div className="footer-column about">
           <h3>About Me</h3>
-          <p>
-            I’m Jarius Miguel C. Ballesteros, aspiring Junior Data Analyst eager to support data collection, verification, and analysis with strong attention to detail.
-          </p>
+          <p className='story-text'>
+I’m Jarius Miguel C. Ballesteros, an aspiring Junior Data Analyst with a passion for uncovering stories hidden in data. Ever since I started exploring datasets, I’ve been fascinated by how patterns and trends can guide decisions. Through personal projects and coursework, I’ve gained hands-on experience with Excel, SQL, Python, Tableau, and Power BI, focusing on data cleaning, analysis, visualization, and reporting. I enjoy turning raw numbers into meaningful insights and continuously improving my technical skills. My goal is to contribute to data-driven projects where I can learn, grow, and help organizations make informed decisions.          </p>
         </div>
 
         <div className="footer-column links">
@@ -30,9 +29,11 @@ function Footer() {
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#projects">Projects</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#ahievements">Achievements</a></li>
-            <li><a href="#experience">WorkExperiences</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#experiences">WorkExperiences</a></li>
             <li><a href="#contact">ContactMe</a></li>
                 </ul>
         </div>

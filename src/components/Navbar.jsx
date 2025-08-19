@@ -16,6 +16,7 @@ function Navbar() {
       <nav className={`navbar-links ${isOpen ? 'open' : ''}`}>
         <a href="#home">Home</a>
         <a href="#projects">Projects</a>
+        <a href="#gallery">Gallery</a>
         <a href="#skills">Skills</a>
         <a href="#achievements">Achievements</a>
         <a href="#experiences">WorkExperiences</a>        
