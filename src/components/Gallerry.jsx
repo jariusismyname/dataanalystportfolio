@@ -11,7 +11,7 @@ import "./Gallery.css";
 import FadeSection from "./FadeSection";
 import AdminUpload from "./AdminUpload";
 import TypingEffect from "./TypingEffect";
-import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 
 const Gallery = () => {
   const [items, setItems] = useState([]);
