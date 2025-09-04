@@ -8,7 +8,6 @@ import {
   doc,
 } from "firebase/firestore";
 import "./Gallery.css";
-import FadeSection from "./FadeSection";
 import AdminUpload from "./AdminUpload";
 import TypingEffect from "./TypingEffect";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
@@ -69,7 +68,6 @@ const Gallery = () => {
   return (
     <div id="gallery">
       <div className="gallery-container">
-        <FadeSection>
           <div style={{ textAlign: "center" }}>
             <TypingEffect
               words={["Gallery", "Certifications", "Stories", "Dashboards", "Codes"]}
@@ -197,7 +195,6 @@ const Gallery = () => {
               ))}
             </div>
           )}
-        </FadeSection>
       </div>
     </div>
   );
